@@ -144,8 +144,8 @@ const handleClick1=()=>{
             <AccountCircle style={{ marginRight: "5px" }} />
             <ArrowDropDown />
             <Menu anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={handleMenuClose}>
-              <MuiMenuItem onClick={handleMenuClose}>Profile</MuiMenuItem>
-              <MuiMenuItem onClick={handleMenuClose}>Settings</MuiMenuItem>
+              {/* <MuiMenuItem onClick={handleMenuClose}>Profile</MuiMenuItem>
+              <MuiMenuItem onClick={handleMenuClose}>Settings</MuiMenuItem> */}
             </Menu>
           </MenuItemWrapper>
           <Link to="/cart">

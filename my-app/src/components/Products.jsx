@@ -51,7 +51,7 @@ const Products = ({products}) => {
           <ProductImage src={product.img} alt={product.title} />
           <ProductTitle>{product.title}</ProductTitle>
           <ProductDescription>{product.description}</ProductDescription>
-          <ProductPrice>Price: ${product.price}</ProductPrice>
+          <ProductPrice>Price: ₹{product.price}</ProductPrice>
           {/* Add color and size if available */}
           {product.color && <p>Color: {product.color}</p>}
           {product.size && <p>Size: {product.size}</p>}
