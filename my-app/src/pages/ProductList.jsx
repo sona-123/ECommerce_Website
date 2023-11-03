@@ -8,7 +8,7 @@ const Container = styled.div`
   // Your styles for Container 
   font-family: 'Roboto', sans-serif;
   font-family: 'Signika Negative', sans-serif;
-  ₹{mobile({ width: "fitcontent", margin: "10px" })}
+  ${mobile({ width: "fitcontent", margin: "10px" })}
 `;
 
 const Title = styled.h1`
@@ -22,20 +22,20 @@ const FilterContainer = styled.div`
 
 const Filter = styled.div`
   margin: 20px;
-  ₹{mobile({ width: "0px 20px", display: "flex", flexDirection: "column" })}
+  ${mobile({ width: "0px 20px", display: "flex", flexDirection: "column" })}
 `;
 
 const FilterText = styled.span`
   font-size: 20px;
   font-weight: 600;
   margin-right: 20px;
-  ₹{mobile({ fontSize: "10px" })}
+  ${mobile({ fontSize: "10px" })}
 `;
 
 const Select = styled.select`
   padding: 10px;
   margin-right: 20px;
-  ₹{mobile({ margin: "10px 0px" })}
+  ${mobile({ margin: "10px 0px" })}
 `;
 
 const Option = styled.option``;
@@ -49,15 +49,15 @@ const Pagination = styled.div`
 const PageNumber = styled.button`
   margin: 0 5px;
   padding: 8px 16px;
-  background-color: ₹{(props) => (props.active ? "#4CAF50" : "#f1f1f1")};
-  color: ₹{(props) => (props.active ? "white" : "black")};
+  background-color: ${(props) => (props.active ? "#4CAF50" : "#f1f1f1")};
+  color: ${(props) => (props.active ? "white" : "black")};
   border: none;
   border-radius: 5px;
   cursor: pointer;
 `;
 
 const ProductList = () => {
-  const itemsPerPage = 8;
+  const itemsPerPage = 10;
   const [currentPage, setCurrentPage] = useState(1);
   const [sortedProducts, setSortedProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState(popularProducts);
@@ -130,7 +130,7 @@ const ProductList = () => {
   return (
     <Container>
       <Navbar1/>
-      <Title style={{marginTop:"30px"}}>Products</Title>
+      <Title style={{marginTop:"40px",color: "coral"}}>Products</Title>
       <FilterContainer >
         <Filter>
           <FilterText>Filter Products:</FilterText>

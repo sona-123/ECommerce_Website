@@ -140,14 +140,14 @@ const handleClick1=()=>{
               <Text onClick={handleClick1}>Products</Text>
             {/* </Link> */}
           </MenuItemWrapper>
-          <MenuItemWrapper onClick={handleMenuClick}>
-            <AccountCircle style={{ marginRight: "5px" }} />
-            <ArrowDropDown />
-            <Menu anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={handleMenuClose}>
+          {/* <MenuItemWrapper onClick={handleMenuClick}> */}
+            <AccountCircle style={{ marginRight: "5px",marginLeft: "5px" }} />
+            {/* <ArrowDropDown />
+            <Menu anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={handleMenuClose}> */}
               {/* <MuiMenuItem onClick={handleMenuClose}>Profile</MuiMenuItem>
               <MuiMenuItem onClick={handleMenuClose}>Settings</MuiMenuItem> */}
-            </Menu>
-          </MenuItemWrapper>
+            {/* </Menu>
+          </MenuItemWrapper> */}
           <Link to="/cart">
             <MenuItemWrapper>
               <Badge badgeContent={4} color="primary">
