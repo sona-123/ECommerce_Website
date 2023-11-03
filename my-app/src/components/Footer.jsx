@@ -121,7 +121,7 @@ const Footer = () => {
         {/* </Newsletter> */}
       </Left>
       <Center>
-      <Logo>Luxe.Lounge</Logo>
+      <Logo>DevTown</Logo>
        
        <Newsletter/>
         <SocialContainer>

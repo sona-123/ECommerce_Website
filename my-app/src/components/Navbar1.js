@@ -154,7 +154,7 @@ const Navbar1 = () => {
     <Container>
       <Wrapper>
         <Left>
-          <Logo>Luxe.Lounge</Logo>
+          <Logo>DevTown</Logo>
         </Left>
         <Center>
           <SearchContainer>
