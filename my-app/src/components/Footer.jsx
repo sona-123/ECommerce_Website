@@ -15,7 +15,8 @@ const Container = styled.div`
   background-color: #FAFBFC;
   font-family: 'Roboto', sans-serif;
 font-family: 'Signika Negative', sans-serif;
-  ${mobile({ flexDirection: "column" })}
+ 
+  ${mobile({display:"none"})}
 `;
 
 const Left = styled.div`
